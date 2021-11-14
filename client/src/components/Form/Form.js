@@ -50,7 +50,7 @@ const Form = ({ currentId, setCurrentId }) => {
   return (
     <Paper className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit} >
-      <Typography variant="h6">{currentId ? 'Editing' : 'Creating'} a Memory</Typography>
+      <Typography className={classes.formHeader} variant="h5">{currentId ? 'Editing' : 'Creating'} a Memory</Typography>
       <TextField 
         name="creator"
         variant="outlined"
@@ -92,7 +92,7 @@ const Form = ({ currentId, setCurrentId }) => {
         </div>
         <Button 
           className={classes.buttonSubmit} 
-          variant="contained" color="primary" 
+          variant="contained"
           size="large" type="submit" fullWidth
           >Submit</Button>
 
