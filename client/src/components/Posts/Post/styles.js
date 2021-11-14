@@ -3,10 +3,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
   media: {
-    height: 0,
+    height: '40%',
     paddingTop: '70.25%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    backgroundBlendMode: 'darken'
+    backgroundBlendMode: 'darken',
+    objectFit: 'contain'
   },
   border: {
     border: 'solid'
@@ -46,5 +47,8 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
     padding: '0 16px 8px 16px'
+  },
+  iconButtons: {
+    color: "#910591"
   }
 });

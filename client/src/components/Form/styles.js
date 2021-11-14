@@ -10,6 +10,9 @@ export default makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2)
   },
+  formHeader: {
+    color: "#550055"
+  },
   form: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -21,5 +24,11 @@ export default makeStyles((theme) => ({
   },
   buttonSubmit: {
     marginBottom: 10,
+    backgroundColor: "#550055",
+    color: '#fff',
+    '&:hover': {
+      backgroundColor: "#550055",
+      opacity: 0.9
+    }
   }
 }));
